@@ -48,4 +48,27 @@ public class SinglyLinkedList {
             count++;
         }
     }
+    public void addBefore(int i, int i1){
+        SinglyNode temp=null;
+        SinglyNode current=null;
+
+        current=head;
+        while (current!=null){
+            int location = 20;
+            if (current.value==location){
+                break;
+            }else {
+                temp =current;
+                current=current.next;
+            }
+            if (current==null){
+                System.out.println("could not fund ");
+            }else {
+                SinglyNode newNode=new SinglyNode(99);
+                newNode.next=current;
+                temp.next=newNode;
+                count++;
+            }
+        }
+    }
 }

@@ -6,7 +6,8 @@ public class Main {
         marks.addToHead(80);
         System.out.println(marks.isEmpty());
         marks.printAll();
-
+    marks.addBefore(99,1);
+    marks.printAll();
 
     }
 
